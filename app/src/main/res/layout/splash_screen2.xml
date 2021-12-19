@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    tools:context=".SplashActivity2">
+
+    <ImageView
+        android:id="@+id/imgVesitLogoFavicon"
+        android:layout_width="64dp"
+        android:layout_height="114dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/vesit_logo_favicon" />
+
+    <TextView
+        android:id="@+id/txtVivekanand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgVesitLogoFavicon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginRight="83dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/vivekanand"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    
+    <ImageView
+        android:id="@+id/imgResearchInstituteLogo"
+        android:layout_width="176dp"
+        android:layout_height="172dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="108dp"
+        android:src="@drawable/research_institute_logo"/>
+
+    <TextView
+        android:layout_width="245dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/MPKV"
+        android:textFontWeight="400"
+        android:textSize="17sp" />
+
+</RelativeLayout>

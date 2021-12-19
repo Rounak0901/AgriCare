@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">कृषि देखभाल</string>
+    <string name="app_slogan">धान की बीमारियों का पता लगाना और उनकी रोकथाम</string>
+    <string name="vivekanand">विवेकानंद एजुकेशन सोसाइटी प्रौद्योगिकी संस्थान</string>
+    <string name="MPKV">महात्मा फुले कृषि विद्यापीठ (MPKV)</string>
+    <string name="About_title">एग्री केयर के बारे में</string>
+    <string name="About_content">
+        विवेकानंद एजुकेशन सोसाइटी का संस्थान
+        प्रौद्योगिकी को VESIT या V.E.S के रूप में भी जाना जाता है। प्रौद्योगिकी संस्थान, 1984 में स्थापित, मुंबई विश्वविद्यालय से संबद्ध एक इंजीनियरिंग कॉलेज है।
+    </string>
+    <string name="About_content2">
+        महात्मा फुले कृषि विद्यापीठ (एमपीकेवी), राहुरी
+        में प्रमुख कृषि विश्वविद्यालय है
+        महाराष्ट्र जो शिक्षा, अनुसंधान और विस्तार शिक्षा के माध्यम से किसानों को सेवाएं प्रदान करता है।
+    </string>
+
+    <string name="About_content3">
+        Agricare वह ऐप है जिसे VESIT के छात्रों ने MPKV के सहयोग से किसानों के लिए सुविधाजनक भाषाओं में धान की मौत का पता लगाने, विश्लेषण करने और भविष्यवाणी करने के लिए डिज़ाइन किया है और यह किफायती, रखरखाव मुक्त और इंटरनेट के उपयोग से स्वतंत्र होगा।
+    </string>
+    <string name="select_language">भाषा चुने</string>
+    <string name="enter_username">उपयोगकर्ता नाम दर्ज करें</string>
+    <string name="enter_password">पास वर्ड दर्ज करें</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="register_yourself">रजिस्टर करें</string>
+
+    <string name="name_min_3_characters">नाम</string>
+    <string name="email_address">ईमेल</string>
+    <string name="password_min_6">पासवर्ड (न्यूनतम 6)</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि कीजिये</string>
+    <string name="register">रजिस्टर करें</string>
+    <string name="already_have_an_account_sign_in">खाता मौजूद है? साइन इन करें</string>
+</resources>

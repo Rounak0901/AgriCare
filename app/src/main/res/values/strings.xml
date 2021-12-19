@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AgriCare</string>
+    <string name="app_slogan">Detection and Prevention of Paddy Diseases</string>
+    <string name="vivekanand">Vivekanand Education Society’s
+Institute Of Technology</string>
+    <string name="MPKV">Mahatma Phule Krishi Vidyapeeth (MPKV)</string>
+    <string name="About_title">About AgriCare</string>
+    <string name="About_content">
+        Vivekanand Education Society\'s Institute of
+        Technology also known as VESIT or V.E.S. Institute of Technology, established in 1984, is an engineering  college affiliated with the University of Mumbai.
+    </string>
+    <string name="About_content2">
+        The Mahatma Phule Krishi Vidyapeeth (MPKV), Rahuri
+        is the premier Agricultural University in
+        Maharashtra that renders services to the farmers through Education, Research and Extension Education.
+    </string>
+
+    <string name="About_content3">
+        Agricare is the app which is designed by VESIT students in collabration with MPKV to detect,analyze and predict paddy dieases in languages comfortable with farmers and will be economical,maintance free and independent of internet usage.
+    </string>
+    <string name="select_language">Select Language</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="register_yourself">Register Yourself</string>
+    <string name="name_min_3_characters">Name (Min 3 characters)</string>
+    <string name="email_address">Email Address</string>
+    <string name="password_min_6">Password(Min 6)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_sign_in">Already Have an Account? Sign in</string>
+</resources>

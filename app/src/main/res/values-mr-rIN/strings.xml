@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AgriCare</string>
+    <string name="app_slogan">भातावरील रोग ओळखणे आणि प्रतिबंध करणे</string>
+    <string name="vivekanand">विवेकानंद एज्युकेशन सोसायटी
+इन्स्टिट्यूट ऑफ टेक्नॉलॉजी</string>
+    <string name="MPKV">महात्मा फुले कृषी विद्यापीठ (MPKV)</string>
+    <string name="About_title">AgriCare बद्दल</string>
+    <string name="About_content">
+        विवेकानंद एज्युकेशन सोसायटीची संस्था
+        तंत्रज्ञान VESIT किंवा V.E.S म्हणूनही ओळखले जाते. इन्स्टिट्यूट ऑफ टेक्नॉलॉजी, 1984 मध्ये स्थापित, मुंबई विद्यापीठाशी संलग्न अभियांत्रिकी महाविद्यालय आहे.</string>
+    <string name="About_content2">
+        महात्मा फुले कृषी विद्यापीठ (MPKV), राहुरी
+        मधील प्रमुख कृषी विद्यापीठ आहे
+        शिक्षण, संशोधन आणि विस्तार शिक्षणाच्या माध्यमातून शेतकऱ्यांना सेवा देणारा महाराष्ट्र.
+    </string>
+
+    <string name="About_content3">
+        Agricare हे अॅप आहे जे VESIT विद्यार्थ्यांनी MPKV च्या सहकार्याने शेतकऱ्यांना सोयीस्कर भाषेत भात रोग शोधण्यासाठी, विश्लेषण करण्यासाठी आणि अंदाज लावण्यासाठी डिझाइन केले आहे आणि ते किफायतशीर, देखभाल मुक्त आणि इंटरनेट वापरापासून स्वतंत्र असेल.    </string>
+    <string name="select_language">भाषा निवडा</string>
+    <string name="enter_username">वापरकर्ता प्रविष्ट करा</string>
+    <string name="enter_password">पासवर्ड टाका</string>
+    <string name="login">लॉगिन करा</string>
+    <string name="register_yourself">नोंदणी करा</string>
+
+    <string name="name_min_3_characters">नाव (किमान ३ वर्ण)</string>
+    <string name="email_address">ईमेल</string>
+    <string name="password_min_6">पासवर्ड (किमान 6)</string>
+    <string name="confirm_password">पासवर्डची पुष्टी करा</string>
+    <string name="register">नोंदणी करा</string>
+    <string name="already_have_an_account_sign_in">खाते आहे? साइन इन करा</string>
+</resources>
