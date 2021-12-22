@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtResultsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Results"
+        android:textSize="30dp"
+        android:textFontWeight="700"
+        android:elevation="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imgResults"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/txtResultsHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/crop2" />
+
+    <TextView
+        android:id="@+id/txtDiseaseHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgResults"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Disease:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textSize="21sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/txtDiseaseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDiseaseHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Scald / Blast"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/txtCurationMethodsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDiseaseType"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Curation Methods:"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"/>
+
+    <TextView
+        android:id="@+id/txtCurationMethods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCurationMethodsHeading"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at blandit eros, nec efficitur nisl. Cras et tellus quis ligula dictum malesuada eget et nisl. "
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"/>
+
+
+
+</RelativeLayout>

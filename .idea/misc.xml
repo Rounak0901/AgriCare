@@ -12,9 +12,10 @@
         <entry key="app/src/main/res/layout/about_page.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/acitivity_login.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/activity_first_page.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.12447916666666667" />
+        <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/activity_results.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/select_language.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/splash_screen1.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/splash_screen2.xml" value="0.24583333333333332" />

@@ -24,6 +24,7 @@
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".FirstActivity"/>
         <activity android:name=".GalleryActivity"/>
+        <activity android:name=".ResultsActivity"/>
         <activity android:name=".AboutActivity"/>
 
     </application>

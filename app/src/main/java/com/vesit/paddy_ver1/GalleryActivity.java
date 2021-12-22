@@ -12,6 +12,12 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.vesit.paddy_ver1.ml.ModelUnquant;
+
+import org.tensorflow.lite.DataType;
+import org.tensorflow.lite.support.image.TensorImage;
+import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
@@ -59,7 +65,7 @@ public class GalleryActivity extends AppCompatActivity {
 
                 img = Bitmap.createScaledBitmap(img, 224, 224, true);
 
-                /*try {
+                try {
                     ModelUnquant model = ModelUnquant.newInstance(getApplicationContext());
 
                     // Creates inputs for reference.
@@ -94,13 +100,13 @@ public class GalleryActivity extends AppCompatActivity {
 
                 } catch (IOException e) {
                     // TODO Handle the exception
-                }*/
+                }
 
             }
         });
     }
 
-    /*private void openResults(String result,Bitmap img){
+    private void openResults(String result,Bitmap img){
         Intent intent = new Intent(this,ResultsActivity.class);
 
         Bundle extras = new Bundle();
@@ -110,5 +116,5 @@ public class GalleryActivity extends AppCompatActivity {
         intent.putExtras(extras);
         startActivity(intent);
         finish();
-    }*/
+    }
 }
