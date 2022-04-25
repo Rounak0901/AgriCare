@@ -10,7 +10,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button;
     private static int SPLASH_SCREEN_TIME_OUT=2000;
 
     @Override

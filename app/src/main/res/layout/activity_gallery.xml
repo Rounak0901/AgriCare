@@ -39,7 +39,7 @@
         android:layout_marginBottom="8dp"
         android:layout_below="@+id/ImageGallery"
         android:layout_centerHorizontal="true"
-        android:text="Process"
+        android:text="@string/process"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

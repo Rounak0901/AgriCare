@@ -8,58 +8,77 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
-import com.vesit.paddy_ver1.Data.UserDao;
-import com.vesit.paddy_ver1.Data.UserDataBase;
-
+import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
     private Button btnLogin;
-    private EditText etUsername;
+    private EditText etEmail;
     private EditText etPassword;
     private TextView txtRegister;
-    private UserDao userDao;
+    private TextView txtForgotPassword;
+
+    private String email, pass;
+
+    FirebaseAuth auth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitivity_login);
 
-        btnLogin = (Button) findViewById(R.id.btnLogin);
-        etUsername = (EditText) findViewById(R.id.etUserName);
-        etPassword = (EditText) findViewById(R.id.etPassword);
-        txtRegister = (TextView) findViewById(R.id.txtRegisterYourself);
+        auth = FirebaseAuth.getInstance();
 
-        userDao = Room.databaseBuilder(this, UserDataBase.class, "mi-database.db").allowMainThreadQueries()
-                .build().getUserDao();
+        btnLogin = findViewById(R.id.btnUserLogin);
+        etEmail = findViewById(R.id.etLoginEmail);
+        etPassword = findViewById(R.id.etLoginPassword);
+        txtRegister = findViewById(R.id.txtRegister);
+        txtForgotPassword = findViewById(R.id.txtForgotPassword);
 
-        btnLogin.setOnClickListener(v -> {
-            String user = etUsername.getText().toString().trim();
-            String password = etPassword.getText().toString().trim();
 
-            if(userDao.getUser(user,password)!=null){
-                openFirstActivity();
-            }
-            else{
-                Toast.makeText(this, "Incorrect Credentials", Toast.LENGTH_SHORT).show();
-            }
+        txtForgotPassword.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class)));
 
-        });
+        txtRegister.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this, RegisterActivity.class)));
 
-        txtRegister.setOnClickListener(view -> {
-            openRegisterActivity();
-        });
+        btnLogin.setOnClickListener(view -> validateUser());
+
+
 
     }
 
-    public void openFirstActivity() {
-        Intent login = new Intent(this, FirstActivity.class);
-        startActivity(login);
-        finish();
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(auth.getCurrentUser() !=null){
+            startActivity(new Intent(this, FirstActivity.class));
+            finish();
+        }
+
     }
-    public void openRegisterActivity() {
-        Intent login = new Intent(this, RegisterActivity.class);
-        startActivity(login);
-        finish();
+
+    private void validateUser() {
+        email = etEmail.getText().toString();
+        pass = etPassword.getText().toString();
+        if (email.isEmpty() || pass.isEmpty()) {
+            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+        } else {
+            loginUser();
+        }
+
+    }
+
+    private void loginUser() {
+        auth.signInWithEmailAndPassword(email,pass)
+                .addOnCompleteListener(LoginActivity.this, task -> {
+                    if(task.isSuccessful()){
+                        Toast.makeText(LoginActivity.this, "Login Successful",Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginActivity.this, FirstActivity.class));
+                        finish();
+                    }
+                    else{
+                        Toast.makeText(LoginActivity.this, "Error: "+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                    }
+                });
+
     }
 }

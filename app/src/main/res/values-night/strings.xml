@@ -34,8 +34,8 @@ Institute Of Technology</string>
     <string name="forgot_password_header">Forgot Password</string>
     <string name="snap_tips">Snap Tips</string>
     <string name="snap_tip1">Take the picture of</string>
-    <string name="snap_tip1_2">the diseased part.</string>
-    <string name="snap_tip2_1">Ensure that the plant part</string>
+    <string name="snap_tip1_2">the sick part.</string>
+    <string name="snap_tip2_1">Make sure the plant part</string>
     <string name="snap_tip2_2">is well-lit.</string>
     <string name="snap_tip3_1">If you wish you can</string>
     <string name="snap_tip3_2">choose an image from photos.</string>
@@ -55,7 +55,8 @@ Institute Of Technology</string>
 
     <string name="preventive_measures_healthy">Woo! Your plant is Healthy</string>
     <string name="preventive_measures_leaf_blast">
-        Avoid dry nurseries.Avoid late planting.\n
+        Avoid dry nurseries.\n
+        Avoid late planting.\n
         Burning of straw and stubbles after harvest\n
         Avoid grasses and other weeds on bunds and inside.\n
         Dry seed treatment with Pseudomonas fluorescens talc formulation @10g/kg of seed.\n
@@ -99,5 +100,6 @@ Institute Of Technology</string>
     <string name="tutorial_video_id">IeVUqa_5Puo</string>
     <string name="hyperlink">Learn more about Agricare with a tutorial\n<a href="https://youtu.be/IeVUqa_5Puo">Agricare Tutorial</a></string>
     <string name="institute_campus">Institute Campus</string>
+
 
 </resources>

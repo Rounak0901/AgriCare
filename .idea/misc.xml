@@ -3,22 +3,46 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22847222222222222" />
+        <entry key="app/src/main/res/drawable/bottom_rectangle.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/custom_app_bar_background.xml" value="0.2125" />
         <entry key="app/src/main/res/drawable/gradient_background.xml" value="0.2175925925925926" />
         <entry key="app/src/main/res/drawable/gradient_button_background.xml" value="0.2175925925925926" />
-        <entry key="app/src/main/res/drawable/ic_camera_foreground.xml" value="0.140625" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_to_photos_24.xml" value="0.2416988416988417" />
+        <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.24453125" />
+        <entry key="app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.22847222222222222" />
+        <entry key="app/src/main/res/drawable/ic_camera_foreground.xml" value="0.21666666666666667" />
         <entry key="app/src/main/res/drawable/ic_gallery_background.xml" value="0.2175925925925926" />
         <entry key="app/src/main/res/drawable/ic_gallery_foreground.xml" value="0.2175925925925926" />
+        <entry key="app/src/main/res/drawable/ic_info_background.xml" value="0.22847222222222222" />
+        <entry key="app/src/main/res/drawable/ic_info_foreground.xml" value="0.22847222222222222" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.22847222222222222" />
+        <entry key="app/src/main/res/drawable/round_corner_top.xml" value="0.20277777777777778" />
         <entry key="app/src/main/res/drawable/rounded_corners.xml" value="0.2175925925925926" />
-        <entry key="app/src/main/res/layout/about_page.xml" value="0.24583333333333332" />
-        <entry key="app/src/main/res/layout/acitivity_login.xml" value="0.24583333333333332" />
-        <entry key="app/src/main/res/layout/activity_first_page.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/splash_screen_background.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/font/font.xml" value="0.25212355212355214" />
+        <entry key="app/src/main/res/layout-v28/splash_screen1.xml" value="0.2935185185185185" />
+        <entry key="app/src/main/res/layout/about_page.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/acitivity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_blurry_image.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_first_page.xml" value="0.20208333333333334" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/activity_gallery.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_login_phone.xml" value="0.28135593220338984" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.24583333333333332" />
-        <entry key="app/src/main/res/layout/activity_results.xml" value="0.24583333333333332" />
-        <entry key="app/src/main/res/layout/select_language.xml" value="0.24583333333333332" />
-        <entry key="app/src/main/res/layout/splash_screen1.xml" value="0.24583333333333332" />
-        <entry key="app/src/main/res/layout/splash_screen2.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/activity_results.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_snap_tips_pop_up.xml" value="0.2814814814814815" />
+        <entry key="app/src/main/res/layout/activity_verify_otp.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_verify_phone.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/alert_send_feedback.xml" value="0.2351851851851852" />
+        <entry key="app/src/main/res/layout/alert_snap_tips.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/select_language.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/splash_screen1.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/splash_screen2.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/menu_list.xml" value="0.24583333333333332" />
       </map>
     </option>
   </component>
@@ -27,5 +51,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.100286064995924" />
+      </ProjectState>
+    </option>
   </component>
 </project>

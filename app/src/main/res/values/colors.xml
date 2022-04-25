@@ -11,5 +11,20 @@
 
     <color name="green">#38b000</color>
     <color name="green_dark">#008000</color>
+    <color name="color_heading">#0E5503</color>
+
+    <color name="antique_white">#FFF1DC</color>
+
+    <color name="smokyWhite">#fafafa</color>
+
+    <color name="lightText">#c9d3f7</color>
+    <color name="hintColor">#b7c1e4</color>
+    <color name="searchBarColor">#0023a1</color>
+    <color name="greenBtnColor">#48ceb9</color>
+    <color name="lightBlue">#e6f2ff</color>
+    <color name="textBlue">#268eff</color>
+    <color name="deepBlue">#425186</color>
+
+    <color name="olive_black">#424342</color>
 
 </resources>

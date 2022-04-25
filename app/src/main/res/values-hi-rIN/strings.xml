@@ -30,4 +30,71 @@
     <string name="confirm_password">पासवर्ड की पुष्टि कीजिये</string>
     <string name="register">रजिस्टर करें</string>
     <string name="already_have_an_account_sign_in">खाता मौजूद है? साइन इन करें</string>
+    <string name="enter_email">ईमेल दर्ज करें</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="snap_tips">तस्वीरें खींचने के टिप्स</string>
+    <string name="snap_tip1">बीमार हिस्से की तस्वीर लें</string>
+    <string name="snap_tip1_2"></string>
+    <string name="snap_tip2_1">सुनिश्चित करें कि पौधे के हिस्से में रोशनी हो</string>
+    <string name="snap_tip2_2"></string>
+    <string name="snap_tip3_1">आप चाहें तो गैलरी से तस्वीरें ले सकते हैं</string>
+    <string name="snap_tip3_2"></string>
+    <string name="agriCareLogo">agriCareLogo</string>
+    <string name="forgot_password_header">पासवर्ड भूल गए</string>
+    <string name="reset">रीसेट</string>
+    <string name="agri">एग्री</string>
+    <string name="care">केयर</string>
+    <string name="results">परिणाम</string>
+    <string name="disease_name">रोग का नाम:</string>
+    <string name="scientific_name">वैज्ञानिक नाम:</string>
+    <string name="preventive_measures">निवारक उपाय</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="about_app">ऐप के बारे में</string>
+    <string name="about_app_sub">आइए ऐप के बारे में और जानें!</string>
+    <string name="camera">कैमरा</string>
+    <string name="gallery">गेलरी</string>
+    <string name="preventive_measures_healthy">आपका पौधा स्वस्थ है</string>
+    <string name="preventive_measures_leaf_blast">
+        सूखी नर्सरी से बचें।\n
+        देर से रोपण से बचें।\n
+        कटाई के बाद पुआल और पराली को जलाना\n
+        मेड़ों और अंदर घास और अन्य खरपतवारों से बचें।\n
+        स्यूडोमोनास फ्लोरेसेंस टैल्क फॉर्म्युलेशन @ 10 ग्राम/किलोग्राम बीज के साथ सूखा बीज उपचार।\n
+        नर्सरी में 25m2 के क्षेत्र में 2.5cm की गहराई तक पानी जमा करें।\n
+        2.5 किलो पी. फ्लोरेसेंस (टैल्क) छिड़कें और रुके हुए पानी के साथ मिलाएं।\n
+        रोपाई की जड़ प्रणाली को 30 मिनट के लिए भिगोएँ और रोपाई करें।\n
+        रोपाई के 45 दिनों के बाद 10 दिन के अंतराल पर तीन बार पी. फ्लोरेसेंस टैल्क फॉर्म्युलेशन 0.5% की दर से छिड़काव करें।</string>
+    <string name="preventive_measures_false_smut">स्वस्थ फसल से चुने गए रोगमुक्त बीजों का प्रयोग करें।\n
+        कार्बेन्डाजिम 2.0 ग्राम/किलोग्राम बीज से बीज उपचार।\nकीटनाशकों को नियंत्रित करें।\n
+        नाइट्रोजन के विभाजन की सिफारिश की जाती है।\n
+        संक्रमित पौधे के मलबे को हटाना और उचित निपटान</string>
+    <string name="preventive_measures_leaf_scald">उर्वरक के अधिक प्रयोग से बचें।
+        रोग को खत्म करने के लिए बीजों के उपचार के लिए बेनोमाइल, कार्बेन्डाजिम, क्विटोजीन और थियोफेनेट-मिथाइल जैसे रसायनों का उपयोग किया जा सकता है।
+        बेनोमाइल, फेंटिन एसीटेट, एडिफेनफोस, और वैलिडैमाइसिन के छिड़काव से खेत में पत्ती झुलसने की घटनाओं में काफी कमी आती है।
+        कैप्टाफोल, मैंकोजेब और कॉपर ऑक्सीक्लोराइड को पत्ते पर लगाने से भी फफूंद रोग की घटना और गंभीरता कम हो जाती है।res</string>
+    <string name="feedback_form">प्रतिपुष्टि फॉर्म</string>
+    <string name="feedback_message">हमें आपसे सुनना प्रिय लगेगा!</string>
+    <string name="cancel">रद्द</string>
+    <string name="send">भेजें</string>
+    <string name="verify_otp">ओटीपी सत्यापित करें</string>
+    <string name="rate_us">रेटिंग दें</string>
+    <string name="enter_feedback">प्रतिपुष्टि दर्ज करें</string>
+    <string name="next">आगे बढ़ने</string>
+    <string name="enter_phone_number">फोन नंबर दर्ज</string>
+    <string name="enter_otp">ओटीपी दर्ज करें</string>
+    <string name="process">प्रक्रिया शुरू करें</string>
+    <string name="seems_like_the_image_is_too_blurry">ऐसा लगता है कि छवि बहुत धुंधली है!</string>
+    <string name="let_s_click_again">आइए फिर से क्लिक करें</string>
+    <string name="healthy">स्वस्थ</string>
+    <string name="leaf_blast">लीफ ब्लास्ट</string>
+    <string name="neck_blast">नेक ब्लास्ट</string>
+    <string name="false_smut">झूठी स्मट</string>
+    <string name="leaf_scald">लीफ स्कैल्ड</string>
+    <string name="leaf_blast_scientific_name">मैग्नापोर्थे ग्रिसिया</string>
+    <string name="false_smut_scientific_name">यूस्टिलागिनोइडिया विरेन्स</string>
+    <string name="leaf_scald_scientific_name">मोनोग्राफेला अल्बेस्केंस</string>
+    <string name="tutorial_video_id">waRDgW4w-Sw</string>
+    <string name="hyperlink">एक ट्यूटोरियल के साथ एग्रीकेयर के बारे में और जानें\n<a href="https://youtu.be/waRDgW4w-Sw">Agricare Tutorial</a></string>
+    <string name="institute_campus">संस्थान परिसर</string>
+
 </resources>

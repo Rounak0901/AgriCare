@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.PlantDiseaseDetectionApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.PlantDiseaseDetectionApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/green</item>
-        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -13,4 +13,21 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.PlantDiseaseDetectionApp.Popup">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="expandedBarTextStyle" parent="Theme.PlantDiseaseDetectionApp">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">0sp</item>
+        <item name="android:textColor">@android:color/transparent</item>
+
+    </style>
+
+    <style name="collapsedBarTextStyle" parent="Theme.PlantDiseaseDetectionApp">
+        <item name="android:textColor">@color/smokyWhite</item>
+    </style>
+
 </resources>

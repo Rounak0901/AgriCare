@@ -29,4 +29,70 @@
     <string name="confirm_password">पासवर्डची पुष्टी करा</string>
     <string name="register">नोंदणी करा</string>
     <string name="already_have_an_account_sign_in">खाते आहे? साइन इन करा</string>
+    <string name="enter_email">ईमेल प्रविष्ट करा</string>
+    <string name="forgot_password">पासवर्ड विसरलात?</string>
+    <string name="snap_tips">चित्रे क्लिक करण्यासाठी टिपा</string>
+    <string name="snap_tip1">आजारी भागाचे चित्र घ्या</string>
+    <string name="snap_tip1_2"></string>
+    <string name="snap_tip2_1">रोपाच्या भागात प्रकाश आहे याची खात्री करा</string>
+    <string name="snap_tip2_2"></string>
+    <string name="snap_tip3_1">तुमची इच्छा असल्यास तुम्ही गॅलरीतून फोटो काढू शकता</string>
+    <string name="snap_tip3_2"></string>
+    <string name="agriCareLogo">agriCareLogo</string>
+    <string name="forgot_password_header">पासवर्ड विसरलात</string>
+    <string name="reset">रीसेट</string>
+    <string name="agri">एग्री</string>
+    <string name="care">केयर</string>
+    <string name="results">परिणाम</string>
+    <string name="disease_name">रोगाचे नाव:</string>
+    <string name="scientific_name">शास्त्रीय नाव:</string>
+    <string name="preventive_measures">प्रतिबंधात्मक उपाय</string>
+    <string name="logout">बाहेर पडणे</string>
+    <string name="about_app">अॅप बद्दल</string>
+    <string name="about_app_sub">चला अॅपबद्दल अधिक जाणून घेऊया!</string>
+    <string name="camera">कॅमेरा</string>
+    <string name="gallery">गॅलरी</string>
+    <string name="preventive_measures_healthy">निरोगी</string>
+    <string name="preventive_measures_leaf_blast">कोरड्या रोपवाटिका टाळा.\n
+        उशीरा लागवड टाळा.\n
+        कापणीनंतर पेंढा आणि पेंढा जाळणे\n
+        बांधावर आणि आतमध्ये गवत आणि इतर तण टाळा.\n
+        स्यूडोमोनास फ्लूरोसेन्स टॅल्क फॉर्म्युलेशन @10 ग्रॅम/किलो बियाणे सह कोरडी बीजप्रक्रिया.\n
+        रोपवाटिकेत 25m2 क्षेत्रावर 2.5cm खोलीपर्यंत साचलेले पाणी.\n
+        २.५ किलो पी. फ्लोरोसेन्स (टॅल्क) शिंपडा आणि साचलेल्या पाण्यात मिसळा.\n
+        रोपांची मूळ प्रणाली ३० मिनिटे भिजवा आणि प्रत्यारोपण करा.\n
+        लागवडीनंतर ४५ दिवसांपासून १० दिवसांच्या अंतराने तीन वेळा P. फ्लोरोसेन्स टॅल्क फॉर्म्युलेशन @ ०.५% फवारणी करा.</string>
+    <string name="preventive_measures_false_smut">निरोगी पिकातून निवडलेल्या रोगमुक्त बियाणांचा वापर.\n
+        कार्बेन्डाझिम 2.0 ग्रॅम/किलो बियाण्याने बीजप्रक्रिया.\nकिडीचे नियंत्रण.\n
+        नायट्रोजनचे विभाजन करण्याची शिफारस केली जाते.\n
+        संक्रमित वनस्पती मोडतोड काढणे आणि योग्य विल्हेवाट लावणे</string>
+    <string name="preventive_measures_leaf_scald">खतांचा जास्त वापर टाळा.
+        बेनोमिल, कार्बेन्डाझिम, क्विटोझिन आणि थायोफॅनेट-मिथाइल यांसारखी रसायने बियाण्यांवर उपचार करण्यासाठी वापरली जाऊ शकतात.
+        शेतात, बेनोमिल, फेंटीन अॅसीटेट, एडिफेनफॉस आणि व्हॅलिडामायसीनची फवारणी केल्याने पानावरील खपल्याचा प्रादुर्भाव लक्षणीयरीत्या कमी होतो.
+        कॅप्टाफोल, मॅन्कोझेब आणि कॉपर ऑक्सिक्लोराईडचा फॉलीअर वापर केल्याने बुरशीजन्य रोगाचा प्रादुर्भाव आणि तीव्रता कमी होते.</string>
+    <string name="feedback_form">अभिप्राय फॉर्म</string>
+    <string name="feedback_message">आम्हाला तुमच्याकडून ऐकायला आवडेल!</string>
+    <string name="cancel">रद्द</string>
+    <string name="send">पाठवा</string>
+    <string name="verify_otp">OTP सत्यापित करा</string>
+    <string name="rate_us">रेट करा</string>
+    <string name="enter_feedback">अभिप्राय प्रविष्ट करा</string>
+    <string name="next">पुढे</string>
+    <string name="enter_phone_number">फोन नंबर प्रविष्ट करा</string>
+    <string name="enter_otp">OTP टाका</string>
+    <string name="process">प्रक्रिया सुरू करा</string>
+    <string name="seems_like_the_image_is_too_blurry">प्रतिमा खूप अस्पष्ट आहे असे दिसते!</string>
+    <string name="let_s_click_again">चला पुन्हा क्लिक करूया</string>
+    <string name="healthy">निरोगी</string>
+    <string name="leaf_blast">लीफ ब्लास्ट</string>
+    <string name="neck_blast">नेक ब्लास्ट</string>
+    <string name="false_smut">खोटे स्मट</string>
+    <string name="leaf_scald">लीफ स्कॅल्ड</string>
+    <string name="leaf_blast_scientific_name">मैग्नापोर्थे ग्रिसिया</string>
+    <string name="false_smut_scientific_name">यूस्टिलागिनोइडिया विरेन्स</string>
+    <string name="leaf_scald_scientific_name">मोनोग्राफेला अल्बेस्केंस</string>
+    <string name="tutorial_video_id">riodHkiPAdo</string>
+    <string name="hyperlink">ट्यूटोरियलसह अॅग्रीकेअरबद्दल अधिक जाणून घ्या\n<a href="https://youtu.be/riodHkiPAdo">Agricare Tutorial</a></string>
+    <string name="institute_campus">संस्था परिसर</string>
+
 </resources>

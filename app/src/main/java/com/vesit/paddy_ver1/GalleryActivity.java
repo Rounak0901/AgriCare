@@ -12,19 +12,13 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.vesit.paddy_ver1.ml.ModelUnquant;
-
-import org.tensorflow.lite.DataType;
-import org.tensorflow.lite.support.image.TensorImage;
-import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
-
 import java.io.IOException;
-import java.nio.ByteBuffer;
+import java.util.List;
 
 public class GalleryActivity extends AppCompatActivity {
 
-    String results;
     Bitmap img;
+    Classifier classifier;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +29,7 @@ public class GalleryActivity extends AppCompatActivity {
         Button processButton = findViewById(R.id.btnProcess);
         ImageView imageView = findViewById(R.id.ImageGallery);
         Intent intent = getIntent();
-        String tokens[] = new String[]{"Blast","Scald","Healthy"};
+
 
         if(intent.hasExtra("ImageUri")) {
             Uri imageUri = intent.getParcelableExtra("ImageUri");
@@ -52,58 +46,47 @@ public class GalleryActivity extends AppCompatActivity {
             img = imageBitmap;
         }
 
-        processButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                progressBar.setVisibility(View.VISIBLE);
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                progressBar.setVisibility(View.GONE);
+        processButton.setOnClickListener(v -> {
+            progressBar.setVisibility(View.VISIBLE);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
-                img = Bitmap.createScaledBitmap(img, 224, 224, true);
+            img = Bitmap.createScaledBitmap(img, 224, 224, true);
+            List<Classifier.Recognition> resultlist = classifier.recognizeImage(img);
 
-                try {
-                    ModelUnquant model = ModelUnquant.newInstance(getApplicationContext());
+            float confidence = resultlist.get(0).confidence;
 
-                    // Creates inputs for reference.
-                    TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.FLOAT32);
-
-                    TensorImage tensorImage = new TensorImage(DataType.FLOAT32);
-                    tensorImage.load(img);
-                    ByteBuffer byteBuffer = tensorImage.getBuffer();
-
-                    inputFeature0.loadBuffer(byteBuffer);
-
-                    // Runs model inference and gets result.
-                    ModelUnquant.Outputs outputs = model.process(inputFeature0);
-                    TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
-
-                    // Releases model resources if no longer used.
-                    model.close();
-
-                    float maxPossibility = outputFeature0.getFloatArray()[0];
-                    int index=0;
-                    int i=0;
-                    for(i=0; i<outputFeature0.getFloatArray().length; i++){
-                        if(outputFeature0.getFloatArray()[i]>maxPossibility){
-                            maxPossibility = outputFeature0.getFloatArray()[i];
-                            index = i;
-                        }
-                    }
-                    String allResults = outputFeature0.getFloatArray()[0] + "\n " + outputFeature0.getFloatArray()[1] + "\n " + outputFeature0.getFloatArray()[2];
-                    String str = tokens[index] + " " + outputFeature0.getFloatArray()[index] + "\n" + allResults;
-
-                    openResults(str, img);
-
-                } catch (IOException e) {
-                    // TODO Handle the exception
-                }
+            if (confidence>0.80f){
+                openResults(resultlist.get(0).title.split(" ")[1], img);
 
             }
+            else {
+                openClickPictureAgain(img);
+            }
+            progressBar.setVisibility(View.GONE);
+
         });
+
+        try {
+            classifier = new Classifier(getAssets(), "model_unquant.tflite", "labels.txt", 224);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void openClickPictureAgain(Bitmap img){
+        Intent intent = new Intent(this,BlurryImageActivity.class);
+
+        Bundle extras = new Bundle();
+        extras.putParcelable("ImageBitmap",img);
+
+        intent.putExtras(extras);
+        startActivity(intent);
+        finish();
     }
 
     private void openResults(String result,Bitmap img){

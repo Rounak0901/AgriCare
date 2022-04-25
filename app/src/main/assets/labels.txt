@@ -1,0 +1,5 @@
+0 Healthy
+1 Leaf_Blast
+2 Neck_Blast
+3 False_Smut
+4 Leaf_Scald

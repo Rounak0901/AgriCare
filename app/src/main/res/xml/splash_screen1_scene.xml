@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:autoTransition="animateToEnd"
+        motion:duration="3000">
+       <KeyFrameSet>
+
+           <KeyAttribute
+               motion:motionTarget="@+id/imgAppLogo"
+               motion:framePosition="0"
+               android:scaleX="1"/>
+           <KeyAttribute
+               motion:motionTarget="@+id/imgAppLogo"
+               motion:framePosition="0"
+               android:scaleY="1"/>
+
+           <KeyAttribute
+               motion:motionTarget="@+id/imgAppLogo"
+               motion:framePosition="50"
+               android:scaleX="0.8"/>
+           <KeyAttribute
+               motion:motionTarget="@+id/imgAppLogo"
+               motion:framePosition="50"
+               android:scaleY="0.8"/>
+
+           <KeyAttribute
+               motion:motionTarget="@+id/imgAppLogo"
+               motion:framePosition="100"
+               android:scaleX="50"/>
+           <KeyAttribute
+               motion:motionTarget="@+id/imgAppLogo"
+               motion:framePosition="100"
+               android:scaleY="50"/>
+
+
+
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_width="230dp"
+            android:layout_height="231dp"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="140dp" />
+        <Constraint
+            android:layout_width="230dp"
+            android:layout_height="231dp"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="140dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>

@@ -2,27 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/gradient_background"
-    tools:context=".RegisterActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/gradient_background">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:cardBackgroundColor="@color/antique_white"
-        app:cardCornerRadius="0dp">
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@color/antique_white">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/agricare_logo"
-            android:contentDescription="@string/agriCareLogo" />
+            android:layout_gravity="center_horizontal"/>
+
 
 
     </com.google.android.material.card.MaterialCardView>
-
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:background="#FFFFFF"
+            android:background="@color/white"
             android:orientation="vertical"
             android:padding="8dp">
 
@@ -49,7 +49,7 @@
                 android:padding="2dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="@string/register_yourself"
+                android:text="@string/login"
                 android:textAppearance="?attr/textAppearanceHeadline5"
                 android:textSize="28sp"
                 android:textColor="@color/color_heading"
@@ -57,67 +57,50 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLoginPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_phone_number"
+                    android:inputType="textPhonetic"
+                    android:maxLength="10"
+                    android:textColorHint="@color/black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp">
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/black"
+                android:visibility="gone">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/etRegName"
-                    android:hint="@string/enter_username"
-                    android:inputType="text"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/etRegEmail"
-                    android:hint="@string/enter_email"
-                    android:inputType="textEmailAddress"/>
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/etRegPass"
+                    android:id="@+id/etLoginPassword"
                     android:hint="@string/enter_password"
-                    android:inputType="textEmailAddress"/>
+                    android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
-
-
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnUserRegister"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="@string/register_yourself"/>
-
-            <TextView
-                android:id="@+id/txtOpenLogin"
+                android:id="@+id/btnUserLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="12dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:text="@string/already_have_an_account_sign_in"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                app:cornerRadius="15dp"
+                android:text="@string/next"/>
+
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
-
 
 
 </LinearLayout>

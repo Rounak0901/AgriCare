@@ -25,8 +25,8 @@ public class SelectLanguageActivity extends AppCompatActivity {
         loadLocale();
         setContentView(R.layout.select_language);
 
-        ActionBar acnBar = getSupportActionBar();
-        acnBar.setTitle(getResources().getString(R.string.app_name));
+        //ActionBar acnBar = getSupportActionBar();
+        //acnBar.setTitle(getResources().getString(R.string.app_name));
 
         buttonEnglish = (Button) findViewById(R.id.btnEnglish);
         buttonHindi = (Button) findViewById(R.id.btnHindi);
@@ -129,7 +129,7 @@ public class SelectLanguageActivity extends AppCompatActivity {
     }
 
     public void openLoginActivity() {
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, PhoneLoginActivity.class);
         startActivity(intent);
         finish();
     }

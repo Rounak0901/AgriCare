@@ -27,6 +27,7 @@
         android:layout_marginRight="83dp"
         android:gravity="center_horizontal|top"
         android:text="@string/vivekanand"
+        android:textColor="@color/black"
         android:textSize="17sp"
         android:textStyle="bold" />
     
@@ -47,6 +48,7 @@
         android:layout_marginBottom="43dp"
         android:gravity="center_horizontal|top"
         android:text="@string/MPKV"
+        android:textColor="@color/black"
         android:textFontWeight="400"
         android:textSize="17sp" />
 

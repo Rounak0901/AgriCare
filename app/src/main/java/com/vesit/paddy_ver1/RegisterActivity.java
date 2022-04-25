@@ -9,61 +9,87 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
-import com.vesit.paddy_ver1.Data.UserDao;
-import com.vesit.paddy_ver1.Data.UserDataBase;
-import com.vesit.paddy_ver1.Model.User;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText editTextUsername, editTextEmail, editTextPassword, editTextCnfPassword;
-    Button buttonRegister;
-
-    TextView textViewLogin;
-    private UserDao userDao;
+    private EditText regName, regEmail, regPassword;
+    String name, email, password;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        editTextUsername = findViewById(R.id.editTextUsername);
-        editTextEmail = findViewById(R.id.editTextEmail);
-        editTextPassword = findViewById(R.id.editTextPassword);
-        editTextCnfPassword = findViewById(R.id.editTextCnfPassword);
-        buttonRegister = findViewById(R.id.buttonRegister);
+        auth = FirebaseAuth.getInstance();
 
-        textViewLogin = findViewById(R.id.textViewLogin);
-        textViewLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-            }
+        regName = findViewById(R.id.etRegName);
+        regEmail = findViewById(R.id.etRegEmail);
+        regPassword = findViewById(R.id.etRegPass);
+
+        Button btnRegister = findViewById(R.id.btnUserRegister);
+        TextView txtLogin = findViewById(R.id.txtOpenLogin);
+
+        btnRegister.setOnClickListener(view -> validateUser());
+
+        txtLogin.setOnClickListener(view -> {
+            startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+            finish();
         });
 
-        userDao = Room.databaseBuilder(this, UserDataBase.class, "mi-database.db").allowMainThreadQueries()
-                .build().getUserDao();
+    }
 
-        buttonRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String userName = editTextUsername.getText().toString().trim();
-                String email = editTextEmail.getText().toString().trim();
-                String password = editTextPassword.getText().toString().trim();
-                String passwordConf = editTextCnfPassword.getText().toString().trim();
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(auth.getCurrentUser() !=null){
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        }
 
-                if (password.equals(passwordConf)) {
-                    User user = new User(userName,password,email);
-                    userDao.insert(user);
-                    Intent moveToLogin = new Intent(RegisterActivity.this, LoginActivity.class);
-                    startActivity(moveToLogin);
-                    finish();
+    }
 
-                } else {
-                    Toast.makeText(RegisterActivity.this, "Password is not matching", Toast.LENGTH_SHORT).show();
+    private void validateUser() {
 
-                }
-            }
-        });
+        name = regName.getText().toString();
+        email = regEmail.getText().toString();
+        password = regPassword.getText().toString();
+
+        if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
+            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+        } else {
+            registerUser();
+        }
+
+
+    }
+
+    private void registerUser() {
+        auth.createUserWithEmailAndPassword(email,password)
+                .addOnCompleteListener(this, task -> {
+                    if(task.isSuccessful()){
+                        Toast.makeText(RegisterActivity.this, "Registration Successful",Toast.LENGTH_SHORT).show();
+                        updateUser();
+                    }
+                    else{
+                        Toast.makeText(RegisterActivity.this, "Error: "+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+    private void updateUser(){
+        UserProfileChangeRequest changeRequest = new UserProfileChangeRequest.Builder().setDisplayName(name).build();
+        auth.getCurrentUser().updateProfile(changeRequest);
+        auth.signOut();
+        openLogin();
+
+    }
+
+    private void openLogin(){
+        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+        finish();
     }
 }
